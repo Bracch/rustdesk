@@ -57,7 +57,7 @@ jobs: # <--- TRÈS IMPORTANT : Ce mot-clé doit être là !
       platform: x64
       target_version: Windows10
 
-build-for-windows-flutter:
+  build-for-windows-flutter:
     name: ${{ matrix.job.target }}
     needs: [build-RustDeskTempTopMostWindow, generate-bridge]
     runs-on: ${{ matrix.job.os }}
